@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-
+import DisplayIndex from './lesson1/lesson1';
+// import NewPrint from './componants/newPrint';
 function App() {
   return (
     <div className="App">
@@ -9,6 +10,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <DisplayIndex></DisplayIndex>
         <a
           className="App-link"
           href="https://reactjs.org"
