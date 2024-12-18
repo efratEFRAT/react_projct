@@ -20,6 +20,7 @@ export default function FromPizza() {
 
     return (
         <>
+        <p>my pizza</p>
           {pizza.map(p =>(
            <p>{p.name}{p.id}{p.isGluten}</p>   
           )
