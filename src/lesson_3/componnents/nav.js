@@ -6,8 +6,7 @@ import About from "../screens/about";
 
   export default function Nav(){
 return(
-
-    <BrowserRouter>
+    <>
    <nav className="navbar navbar-expand-lg bg-body-tertiary">
     <div className="container-fluid">
     
@@ -32,14 +31,6 @@ return(
       </div>
     </div>
   </nav>
-  <Routes>
-    
-        <Route path="/home" element={<Home/>}/>
-        <Route path="/about" element={<About/>}/>
-        <Route path="/galery" element={<Galery/>}/> 
-        <Route path="/contect" element={<Contect/>}/> 
-  </Routes>
-  </BrowserRouter>
-
+  </>
 );
   }
