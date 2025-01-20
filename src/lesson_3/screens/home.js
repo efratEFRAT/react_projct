@@ -1,7 +1,8 @@
-import img from "../assert/צילום מסך 2025-01-08 020524.png"
-export default function Home(){
-return(
-<img src={img} alt></img>
 
+import { useTranslation } from "react-i18next";
+export default function Home(){
+    const{t}=useTranslation();
+return(
+    <h1>{t('home.h1')}</h1>
 );
 }

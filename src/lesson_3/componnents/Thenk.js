@@ -1,13 +1,11 @@
 
+import { useTranslation } from "react-i18next";
 
 export default function Thank(){
-
-
-
+    const{t}=useTranslation();
     return(
-
 <>
-<h1>HELLO YOU, DEAR CASTOMER!!!!!!!!!</h1>
+<h1>{t('Thenk.h1')}</h1>
 
 </>
 

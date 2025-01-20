@@ -1,3 +1,4 @@
+import {createContext} from 'react'
 import logo from './logo.svg';
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import Nav from './lesson_3/componnents/nav';
@@ -11,6 +12,7 @@ import { RouterProviderProps } from 'react-router-dom';
 import About from './lesson_3/screens/about';
 import Contect from './lesson_3/screens/contect';
 import Thank from './lesson_3/componnents/Thenk';
+import React from 'react';
 
 function App() {
   return (
@@ -26,6 +28,7 @@ function App() {
     <Route path="/thank" element={<Thank/>}/> 
 </Routes>
 </BrowserRouter>
+{/* <mycontaxt.Provider value={langrage}><myComponent/></mycontaxt.Provider> */}
 
     </div>
 

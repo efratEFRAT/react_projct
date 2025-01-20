@@ -1,15 +1,18 @@
 import {useNavigate} from 'react-router-dom'
-import img from "../assert/צילום מסך 2025-01-08 020227.png"
+import { useTranslation } from "react-i18next";
+
 export default function Contect(){
 
         const  navigate = useNavigate();
         const gotothankyou = ()=>{
         navigate("/thank")
         }
+        const{t}=useTranslation();
 return( <>
-
-     <button onClick={gotothankyou}>צור קשר</button>
-        <img src={img} alt></img>
+     
+     <h1>{t('contect.h1')}</h1>
+     <button onClick={gotothankyou}>{t('contect.button')}</button>
+      
         </>
         
 );

@@ -1,0 +1,23 @@
+{
+    "about": {
+        "Link": "about",
+        "h1": "Come and get all the exciting information about us. It's time for you to open your eyes and get to know the beyond!!"
+    },
+    "contect": {
+        "Link": "contect",
+        "h1": "It's time to connect to a world that's all fun. Just click the ugly button in the corner and be with us.",
+        "button": "contect"
+    },
+    "galery": {
+        "Link": "galery",
+        "h1": "Our instructive gallery"
+    },
+    "home": {
+        "Link": "home",
+        "h1": "our home page"
+    },
+    "Thenk": {
+        "Link": "Thenk",
+        "h1": "HELLO YOU, DEAR CASTOMER!!!!!!!!!"
+    }
+}

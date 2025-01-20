@@ -1,7 +1,8 @@
-import img from "../assert/צילום מסך 2025-01-08 015846.png"
 
+import { useTranslation } from "react-i18next";
 export default function About(){
+    const{t}=useTranslation();
 return(
-    <img src={img} alt></img>
+    <h1>{t('about.h1')}</h1>
 );
 }

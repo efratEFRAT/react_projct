@@ -1,9 +1,12 @@
-
-import img from "../assert/צילום מסך 2025-01-08 015549.png"
+import { useTranslation } from "react-i18next";
+import img1 from "../assert/1.png"
 export default function Galery(){
+    const{t}=useTranslation();
 return( 
-
- <img src={img} alt></img>
+   <>
+   <h1>{t('galery.h1')}</h1>
+ <img src={img1}alt></img>
+ </> 
 
 );
 }
