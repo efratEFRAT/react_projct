@@ -29,6 +29,12 @@ code {
   border: 2px solid #ff69b4; /* Cute pink border */
   background-color: #fef5f5; /* Light pink background */
 }
+h4{
+  color: #ff69b4;
+  font-size:1.6rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
 
 h1 {
   color: #ff69b4;
