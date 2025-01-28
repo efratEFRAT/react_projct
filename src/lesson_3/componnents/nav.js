@@ -22,7 +22,7 @@ const en = () => {
 
   return (
     <>
-
+ 
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
 
@@ -54,6 +54,7 @@ const en = () => {
           </div>
         </div>
       </nav>
+
     </>
   );
 }
