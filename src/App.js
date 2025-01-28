@@ -12,18 +12,18 @@ import About from './lesson_3/screens/about';
 import Contect from './lesson_3/screens/contect';
 import Thank from './lesson_3/componnents/Thenk';
 import React from 'react';
-
 import { Provider } from 'react-redux';
 import store from './lesson_5/redux/store';
 import Todos from './lesson_5/redux/Todos';
+
+
 function App() {
   return (
     <div>
  <Provider store={store} >
 <Todos></Todos>
-
- </Provider>
-{/* <BrowserRouter>
+{/* 
+<BrowserRouter>
 <Nav></Nav>
   <Routes> 
     <Route path="/home" element={<Home/>}/>
@@ -33,11 +33,10 @@ function App() {
     <Route path="/thank" element={<Thank/>}/> 
 </Routes>
 </BrowserRouter> */}
-{/* <mycontaxt.Provider value={langrage}><myComponent/></mycontaxt.Provider> */}
-
+</Provider>
+ {/* <mycontaxt.Provider value={langrage}><myComponent/></mycontaxt.Provider> */}
     </div>
 
   );
 }
-
 export default App;

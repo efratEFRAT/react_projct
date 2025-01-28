@@ -11,3 +11,135 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.todos-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 50px;
+  font-family: 'Comic Sans MS', sans-serif;
+}
+
+.task-list-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 60%;
+  position: relative;
+  border: 2px solid #ff69b4; /* Cute pink border */
+  background-color: #fef5f5; /* Light pink background */
+}
+
+h1 {
+  color: #ff69b4;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.task-item1{
+
+  padding: 10px;
+  margin: 5px 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ font-weight: 800;
+  transition: background-color 0.8s ease;
+}
+
+.task-item {
+  background-color: #ffdcdc;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.task-item:hover {
+  background-color: #fff4e6;
+}
+
+.priority-label {
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 3px 6px;
+  color: white;
+}
+
+.priority-1 {
+  background-color: #00e676; /* Green */
+}
+
+.priority-2 {
+  background-color: #ffeb3b; /* Yellow */
+}
+
+.priority-3 {
+  background-color: #ff5722; /* Red */
+}
+
+.task-name {
+  font-size: 1.2rem;
+  color: #333;
+  margin-right: 10px;
+}
+
+.remove-btn {
+  background-color:black;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 12px;
+  cursor: cell;
+  transition: background-color 0.3s ease;
+  font-size: 1.2rem;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-left: 20px;
+  width: 30%;
+  background-color: #ffebee;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.input-field {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.input-field:focus {
+  border-color: #ff69b4;
+  outline: none;
+}
+
+.add-btn {
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+  font-size: 1.2rem;
+}
+
+.add-btn:hover {
+  background-color: #f50057;
+}
