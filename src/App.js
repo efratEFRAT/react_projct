@@ -20,7 +20,7 @@ import Todos from './lesson_5/redux/Todos';
 function App() {
   return (
     <div>
-      <NewPrint></NewPrint>
+<NewPrint></NewPrint>
  <Provider store={store} >
 <Todos></Todos>
 

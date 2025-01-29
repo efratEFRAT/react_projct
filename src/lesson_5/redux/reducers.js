@@ -1,13 +1,15 @@
 
-import { ADD_TODO, REMOVE_TODO } from './actionTyps';
-const stateTaskList = { todes: [] };
+import { ADD_TODO, REMOVE_TODO,RESTORE } from './actionTyps';
+const stateTaskList = { todos: [] };
 
- const manegerTasks = (state = stateTaskList, action) => {
+const manegerTasks = (state = stateTaskList, action) => {
     switch (action.type) {
         case ADD_TODO:
-            return { ...state,todes: [...state.todes, action.payload], };
+            return { ...state, todos: [...state.todos, action.payload], };
         case REMOVE_TODO:
-            return { ...state, todes: state.todes.filter(task => task.id !== action.payload.id) };
+            return { ...state, todos: state.todos.filter(task => task.id !== action.payload.id) };
+        case RESTORE:
+            return { ...state, todos: [...state.todos, action.payload], };
         default:
             return state;
     }

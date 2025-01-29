@@ -1,21 +1,20 @@
-
+import Recycling_bin from './Recycling_bin';
 import { useSelector, useDispatch } from 'react-redux';
 import { add_todo, remove_todo } from './action';
 import { useEffect, useState } from 'react';
 export default function Todos() {
-    const tasks = useSelector((state) => state.todos.todos);
-    console.log("tasks  "+tasks);
-    // const binTasks = useSelector((state) => state.taskBin.binTask);
+    const tasks = useSelector((state) => state.todos1.todos);
     const dispatch = useDispatch();
     const [name, setName] = useState('');
     const [taskId, setTaskId] = useState(1);
     const [left, setLeft] = useState(0);
     const [priority, setPriority] = useState();
+    const [showComponent, setShowComponent] = useState(false);
 
 
     function add_todo1() {
-
-        dispatch(add_todo({ name, id: taskId, priority }));
+   var task={ name, id: taskId, priority }
+        dispatch(add_todo(task));
         setName('');
         setTaskId(taskId + 1);
         if (name)
@@ -47,7 +46,7 @@ export default function Todos() {
 
                                 onClick={() => remove_todo1(task)}
                             >
-                                ✓</button>
+                                👍</button>
 
                         </li>
                     ))}
@@ -76,6 +75,12 @@ export default function Todos() {
                 </select>
                 <button className="add-btn" onClick={add_todo1}>Add Task</button>
                 <h4> Number of tasks you have left: {left}</h4>
+                <button onClick={() => setShowComponent(!showComponent)}>
+                    {showComponent ? "close  🗑️" : "view  🗑️"}
+                </button>
+
+                {showComponent ? <Recycling_bin /> : ''}
+
 
             </div>
         </div>
