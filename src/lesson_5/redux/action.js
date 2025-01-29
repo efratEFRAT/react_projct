@@ -4,9 +4,9 @@ export const add_todo=(task) =>({
    type:ADD_TODO,
       payload:task,
 });
-export const remove_todo=(taskId) =>({
+export const remove_todo=(task) =>({
     type:REMOVE_TODO, 
-    payload:taskId,   
+    payload:task,   
 });
 
 
